@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:screenOrientation="portrait"
+    tools:context="note.light.sun.sunlightnote.Record">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="26dp"
+        android:text="Note"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:foregroundTint="#FF0000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="27dp"
+        android:layout_below="@+id/etlj3"
+        android:layout_alignLeft="@+id/etlj4"
+        android:layout_alignStart="@+id/etlj4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="25dp"
+        android:text="Current Brightness"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:foregroundTint="#FF0000"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="27dp" />
+
+    <TextView
+        android:id="@+id/etlj1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Brightness level"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/etlj2"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/etlj3"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etlj2"
+        android:layout_alignBottom="@+id/etlj2"
+        android:layout_toRightOf="@+id/etlj1"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/etlj3"
+        android:layout_alignStart="@+id/etlj3"
+        android:text="Time"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etlj1"
+        android:layout_alignStart="@+id/etlj1"
+        android:layout_below="@+id/etlj1"
+        android:layout_marginTop="25dp"
+        android:text="Date"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etlj4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/etlj2"
+        android:layout_alignStart="@+id/etlj2"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:hint="Under 200 characters"
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:gravity="top"
+        android:layout_alignRight="@+id/etlj3"
+        android:layout_alignEnd="@+id/etlj3" />
+
+    <Button
+        android:id="@+id/btlj2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light"
+        android:text="Cancel"
+        android:layout_alignBaseline="@+id/btlj1"
+        android:layout_alignBottom="@+id/btlj1"
+        android:layout_alignRight="@+id/etlj4"
+        android:layout_alignEnd="@+id/etlj4"
+        android:layout_alignLeft="@+id/etlj3"
+        android:layout_alignStart="@+id/etlj3" />
+
+    <Button
+        android:id="@+id/btlj1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etlj2"
+        android:layout_alignLeft="@+id/etlj4"
+        android:layout_alignRight="@+id/etlj2"
+        android:layout_alignStart="@+id/etlj4"
+        android:layout_below="@+id/etlj4"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Save" />
+
+</RelativeLayout>
