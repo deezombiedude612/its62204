@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="how.blank.isit">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="How ___ is it?"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="howblankisit.example.administrator.mainpage.splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="howblankisit.example.administrator.mainpage.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="howblankisit.example.administrator.mainpage.far" />
+        <activity android:name="howblankisit.example.administrator.mainpage.tall" />
+        <activity android:name="howblankisit.example.administrator.mainpage.bright" />
+
+    </application>
+
+</manifest>

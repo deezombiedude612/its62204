@@ -1,0 +1,14 @@
+<resources>
+    <string-array name="items">
+        <item>FAR</item>
+        <item>HIGH</item>
+        <item>CLOSE</item>
+        <item>TALL</item>
+        <item>BRIGHT/DARK</item>
+
+    </string-array>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
